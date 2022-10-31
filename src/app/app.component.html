@@ -7,11 +7,11 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
-          <a> <button (click)="scrollUno()"class="1" mat-button color="basic">About me</button></a>
-          <a> <button (click)="scrollDos()" class="1" mat-button color="basic">Experience</button></a>
+          <a> <button (click)="scrollUno()"class="1" mat-button color="basic">Sobre mi</button></a>
+          <a> <button (click)="scrollDos()" class="1" mat-button color="basic">Experiencia</button></a>
           <a> <button (click)="scrollTres()" class="1" mat-button color="basic">Skill</button> </a>
-          <a> <button (click)="scrollCuatro()"class="1" mat-button color="basic">Education</button></a>
-          <a><button (click)="scrollCinco()"class="1" mat-button color="basic">Contact</button></a>
+          <a> <button (click)="scrollCuatro()"class="1" mat-button color="basic">Educacion</button></a>
+          <a><button (click)="scrollCinco()"class="1" mat-button color="basic">Contacto</button></a>
         </div>
       </div>
     </div>
@@ -74,7 +74,8 @@
   <mat-card class="sombra">
     <div class="row">
       <div class="col-md-12">
-        <div class="text-md-center ">About ME</div>
+        <div class="text-md-center ">Sobre mi</div>
+        <br>
         <p>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam quis, harum ipsa voluptatem consequatur debitis suscipit doloribus quasi exercitationem eos deleniti a. Voluptates facere, similique consectetur ipsam accusantium culpa rerum.
         </p>
@@ -140,7 +141,7 @@
           <div class="row">
             <div class="col-md-12">
             </div>
-            <div class="card mb-3" style="max-width: 70%;">
+            <div class="card mb-3" >
               <div class="row">
                 <div class="col-md-6">
                   <div class="card-body">
@@ -157,7 +158,7 @@
     <div class="row">
       <div class="col-md-6">
       </div>
-      <div class="card mb-3" style="max-width: 70%;">
+      <div class="card mb-3" style="max-width: 99%;">
         <div class="row">
           <div class="col-md-8">
             <div class="card-body">
@@ -171,32 +172,37 @@
     </div>
   </div>
   <div #seccionContacto class="fondo2">
-    <div class="container-fluid">
-      <mat-card class="card3">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="text-md-center">Contact</div>
-          </div>
-        </div>
-          <div class="row text-center">
-            <div class="col-md-6">
-              <form class="example-form">
+    <div  class=" texto col-md-12  text-center fw-bold">
+      <div class=" letra text-center">Contacto</div>
 
-                <mat-form-field id="form"appearance="fill">
-                  <mat-label class="name">NAME</mat-label>
-                  <input matInput>
-                </mat-form-field>
-                  <mat-form-field id="form"class="example-full-width" appearance="fill">
-                    <mat-label class="email">Email</mat-label>
-                    <input matInput type="email"placeholder="pat@example.com">
-                  </mat-form-field>
-              </form>
-            </div>
-            <div class="col-md-6">
 
-            </div>
-          </div>
-      </mat-card>
-    </div>
+
+
+
+   </div>
+
+   <div class=" fw-bold">
+     <label for="exampleFormControlInput1" class="form-label">Email</label>
+     <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+   </div>
+   <div class=" fw-bold">
+     <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
+     <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+
+
+   </div>
+
+   <div class="container-fluid">
+     <div class="row">
+     <div class="col-md-12">
+
+     </div>
+     </div>
+
+
+
+     <button class="botonsend" mat-raised-button color="primary">Enviar</button>
+
+   </div>
   </div>
 <router-outlet></router-outlet>
