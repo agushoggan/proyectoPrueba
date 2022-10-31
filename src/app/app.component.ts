@@ -59,7 +59,7 @@ export class AppComponent {
     window.open('https://www.linkedin.com/in/agustin-hoggan-962564228/');
   }
   Twitter(){
-    window.open('https://twitter.com/AgustiinHoggan');
+    window.open('https://twitter.com');
   }
 }
 
